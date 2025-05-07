@@ -2,7 +2,7 @@
 
 
 Authors: Abigail Starkweather, Kelly Feke  
-This page describes a project developed for CSCI 635 Global Illumination.
+This page describes a project developed for CSCI 711 Global Illumination.
 
 
 ### Intro  
@@ -15,7 +15,7 @@ This page describes a project developed for CSCI 635 Global Illumination.
 
 ### Architecture  
 #### What we had to begin with  
-We will be using the raytracer that we have built in the course CSCI 635 Global Illumination. We already had basic raytracing implemented with objects, light sources, Phong materials, and reflection.  
+We will be using the raytracer that we have built in the course CSCI 711 Global Illumination. We already had basic raytracing implemented with objects, light sources, Phong materials, and reflection.  
 #### What we needed  
 - Image texture to apply a stained glass image onto the glass object material using uv mapping.  
 - Refraction / Transmission using Snell's Law to allow the glass object to appear as glass have allow light to go through it. We should be able to see through the window even though it is colored.  

@@ -31,24 +31,24 @@ We implemented the following in our world's spawn_ray function.
 ![filter](filter.png)
 - Beer's Law:  
 ![absorb](absorb.png)  
-We also created a material for image texture that implements uv mapping and phong illumination. We drew an image to project.
+- We also created a material for image texture that implements uv mapping and phong illumination. We drew an image to project.
 ![deerling](deerling_glass.png)  
-We also created a glass material that uses phong, k_t=.6 and eta=1.5. We generated triangles with this material to create another stained glass window. We hand-calculated the points of the triangles for this window.  
+- We also created a glass material that uses phong, k_t=.6 and eta=1.5. We generated triangles with this material to create another stained glass window. We hand-calculated the points of the triangles for this window.  
 ![triangles](triangles.png)
 
 
 ### Results  
-Our first attempt used the image-textured object for the window. The image successfully was textured.  
+- Our first attempt used the image-textured object for the window. The image successfully was textured.  
 ![image](image_deer.png)  
-We implemented the shadow-attenuation but got unexpected results. We assume the uv-mapping of the triangular objects that the image is textured onto is manipulating the shadows.  
+- We implemented the shadow-attenuation but got unexpected results. We assume the uv-mapping of the triangular objects that the image is textured onto is manipulating the shadows.  
 ![fail_deer](project_deerscene.png)    
-We pivoted to creating the scene with glass texture objects using separated triangles.
+- We pivoted to creating the scene with glass texture objects using separated triangles.
 ![og](og.png)  
-We can move the light to change the position of the shadow on the floor.  
+- We can move the light to change the position of the shadow on the floor.  
 ![light](movelightup.png)  
-We can also move the camera to get a different view of the image.  
+- We can also move the camera to get a different view of the image.  
 ![camera](cameramove.png)  
-Since we cannot see the colored rays coming from the window, we include this image to prove the rays are in fact there, just not seeable.
+- Since we cannot see the colored rays coming from the window, we include this image to prove the rays are in fact there, just not seeable.
 ![showray](showray.png)
 
 

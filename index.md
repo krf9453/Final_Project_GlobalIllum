@@ -13,7 +13,7 @@ This page describes a project developed for CSCI 711 Global Illumination.
 #### Inspiration Picture
 ![Inspiration Picture](inspo_image.jpg)  
 
-### Architecture  
+### Architexture  
 #### What we had to begin with  
 We will be using the raytracer that we have built in the course CSCI 711 Global Illumination. We already had basic raytracing implemented with objects, light sources, Phong materials, and reflection.  
 #### What we needed  

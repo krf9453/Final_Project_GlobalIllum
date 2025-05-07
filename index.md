@@ -11,9 +11,9 @@ This page describes a project developed for CSCI 635 Global Illumination.
 - There will be a stained glass window object with a pattern of colors  
 - Light will shine through the window and project colors of the window onto the floor  
 #### Inspiration Picture
-![Inspiration Picture](insp_image.jpg)  
+![Inspiration Picture](inspo_image.jpg)  
 
-### Architexture  
+### Architecture  
 #### What we had to begin with  
 We will be using the raytracer that we have built in the course CSCI 635 Global Illumination. We already had basic raytracing implemented with objects, light sources, Phong materials, and reflection.  
 #### What we needed  
@@ -25,14 +25,14 @@ We will be using the raytracer that we have built in the course CSCI 635 Global 
 - We want the light that does go through the window to change color based on the glass' color. Transmission is the base idea — the material lets light pass through. Absorption (Beer's law) explains how much of each color survives based on absorption coefficients per wavelength and thickness of the window object. Without absorption, the light color is unchanged.  
 ### System  
 We implemented the following in our world's spawn_ray function.  
-- Snell's Law:
+- Snell's Law:  
 ![refract](refract.png)
 - Color Filter:  
 ![filter](filter.png)
 - Beer's Law:  
 ![absorb](absorb.png)
 We also created a material for image texture that implements uv mapping and phong illumination. We drew an image to project.
-![deerling](deerling_glass.png)
+![deerling](deerling_glass.png)  
 We also created a glass material that uses phong, k_t=.6 and eta=1.5. We generated triangles with this material to create another stained glass window. We hand-calculated the points of the triangles for this window.  
 ![triangles](triangles.png)
 
@@ -40,7 +40,7 @@ We also created a glass material that uses phong, k_t=.6 and eta=1.5. We generat
 ### Results  
 Our first attempt used the image-textured object for the window. The image successfully was textured.  
 ![image](image_deer.png)  
-We implemented the shadow-attenuation but got unexpected results. We assume the uv-mapping of the triangular objects that the image is textured onto is manipulating the shadows.
+We implemented the shadow-attenuation but got unexpected results. We assume the uv-mapping of the triangular objects that the image is textured onto is manipulating the shadows.  
 ![fail_deer](project_deerscene.png)    
 We pivoted to creating the scene with glass texture objects using separated triangles.
 ![og](og.png)  

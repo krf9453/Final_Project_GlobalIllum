@@ -30,7 +30,7 @@ We implemented the following in our world's spawn_ray function.
 - Color Filter:  
 ![filter](filter.png)
 - Beer's Law:  
-![absorb](absorb.png)
+![absorb](absorb.png)  
 We also created a material for image texture that implements uv mapping and phong illumination. We drew an image to project.
 ![deerling](deerling_glass.png)  
 We also created a glass material that uses phong, k_t=.6 and eta=1.5. We generated triangles with this material to create another stained glass window. We hand-calculated the points of the triangles for this window.  
